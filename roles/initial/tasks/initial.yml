@@ -1,0 +1,9 @@
+---
+- name: setlocale
+    shell: localectl set-locale LANG=ja_JP.utf8
+    when: ansible_env.LANG | default('') != 'ja_JP.utf8'
+
+- name: set timezone to Asia/Tokyo
+    timezone:
+    name: Asia/Tokyo
+

@@ -1,0 +1,11 @@
+---
+install_name:
+  - nginx
+  - git
+  - docker
+
+service_name:
+  - nginx
+  - docker
+  - kubelet
+
